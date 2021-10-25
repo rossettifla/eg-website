@@ -9,10 +9,28 @@ section {
 .html{
     font-family: "helvetica", "sans-serif";
 }
-
-.band-intro{
+.text-centered{
+    text-align:center;
+}
+.menu{
     color: white;
-    background-color:brown;
+    background: url("img/BG\ .png") repeat;
+}
+.menu-icon{
+    max-width:24px; 
+    margin: auto;
+}
+.band-intro{
+    color: black;
+    background:url("img/bg4.JPG") repeat;
+}
+.MusicMedia{
+    color: white;
+    background:url("img/bg5.JPG") repeat center center;
+}
+.Contactus{
+    color: white;
+    background:url("img/bg3.JPG") ;
 }
 .img-responsive{
     max-width: 100%;
@@ -22,6 +40,18 @@ section {
     display: flex;
     flex-direction: column;
 }
+nav > ul{
+    margin:0;
+    padding:0;
+    list-style: none;
+    transition: all .5s ease-in-out;
+    text-align: center;
+    
+}
+.hidden{
+    display: none;
+}
+
 @media screen and (min-width:800px){
     .row{
         flex-direction: row;
@@ -31,4 +61,7 @@ section {
 
     }
     
+    .menu-icon{
+        display:none;
+    }
 }

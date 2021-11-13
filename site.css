@@ -1,67 +1,216 @@
-section {
-    margin:0 auto;
-    padding: 1.5rem;
+
+/*html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+* {-moz-box-sizing:border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+*/
+@import url('https://fonts.googleapis.com');
+@import url('https://fonts.gstatic.com" crossorigin');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300&display=swap');
+
+* {
+    box-sizing: border-box;
 }
-.container{
-    max-width: 800px;
-    margin: 0 auto;
+html {
+    height: 100%;
+    background-color: #bbbbbb;
+    color: rgb(47, 67, 104);
 }
-.html{
-    font-family: "helvetica", "sans-serif";
-}
-.text-centered{
+body{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    margin:auto;
+    margin-left: 20px;
+    margin-right: 20px;
     text-align:center;
+    }
+.wrap {
+    flex: 1 0 auto;
 }
-.menu{
-    color: white;
-    background: url("img/BG\ .png") repeat;
+
+.container,
+.nav {
+  display: flex;
+  flex-direction: column;
 }
-.menu-icon{
-    max-width:24px; 
-    margin: auto;
-}
-.band-intro{
-    color: black;
-    background:url("img/bg4.JPG") repeat;
-}
-.MusicMedia{
-    color: white;
-    background:url("img/bg5.JPG") repeat center center;
-}
-.Contactus{
-    color: white;
-    background:url("img/bg3.JPG") ;
-}
+
+.img-responsive1,
 .img-responsive{
     max-width: 100%;
     margin:0 auto;
+    padding: 25px;
 }
 .row{
     display: flex;
     flex-direction: column;
 }
-nav > ul{
-    margin:0;
-    padding:0;
-    list-style: none;
-    transition: all .5s ease-in-out;
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.nav {
+    margin-top: 6.5px;
+    justify-content: flex-end;
+    margin-top: 0;
+  }
+
+  
+  .nav li {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  
+  .nav a {
+    display: block;
+    color: rgba(82, 47, 240, 0.849);
+    font-weight: bold;
     text-align: center;
+    padding: 6px;
+    border-bottom: 1px solid #D4D3D9;
+  }
+  
+  .nav a:hover {
+    color: #3737d6;
+    border-bottom-color: #27aa69;
+  }
     
-}
-.hidden{
-    display: none;
+.nav-list{
+  display: block;
+  font-weight: 500;
+  
 }
 
-@media screen and (min-width:800px){
-    .row{
+/* --------------------------
+  Media Queries
+--------------------------- */
+
+@media (min-width: 768px) {
+
+body{
+  text-align:left;
+  margin-left: 40px;
+}
+main {
+  flex-direction: row;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 16px;
+  width: 100%;
+}
+
+.img-responsive{
+  height: 150px;
+  width: auto;
+}
+.img-responsive1{
+  height: 250px;
+  width: auto;
+}
+.container,
+.wrap{
+  margin-left: -10px;
+   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+    .nav {
+        margin-top: 10px;
         flex-direction: row;
-    }
-    .col{
-        flex-basis: 50%;
+        justify-content:center;
+      }
+      .nav a {
+        border-bottom-color: transparent;
+      }
+.theband{
+  margin-top: 50px;
+}
+  .container2,
+  .col{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin-top: -10px;
+}
 
+/* --------------------------
+  Media Queries Music
+--------------------------- */
+.img-responsive3{
+  height: 200px;
+  width: auto;
+}
+
+.container3,
+.col2{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
+}
+
+@media screen and (min-width:1200px){
+  body{
+    text-align:left;
+    margin-right: 60px auto;
+  }
+  main {
+    flex-direction: row;
+    margin-top: 16px;
+    width: 100%;
+  }
+  .img-responsive{
+    height: 150px;
+    width: auto;
+  }
+
+ .img-responsive1{
+   height: 400px;
+   width: auto;
+ }
+ 
+  .container,
+  .wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+      .nav {
+          margin-top: 10px;
+          flex-direction: row;
+          justify-content:center;
+        }
+        .nav a {
+          border-bottom-color: transparent;
+        }
+  .theband{
+    margin-top: 50px;
+  }
+.container2,
+.col{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          flex-grow: 1;
+          flex-wrap: nowrap;
+          align-items: center;
+          margin-top: -10px;
     }
-    
-    .menu-icon{
-        display:none;
-    }
+   /* --------------------------
+  Media Queries Music
+--------------------------- */
+.container3,
+.col2{
+  display: flex;
+  flex-direction:row;
+  flex-wrap: nowrap;
+  align-items: center;
 }

@@ -1,0 +1,136 @@
+/* --------------------------
+  Main Styles
+--------------------------- */
+@import url('https://fonts.googleapis.com');
+@import url('https://fonts.gstatic.com" crossorigin');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300&display=swap');
+
+* {
+    box-sizing: border-box;
+  }
+  
+  form {
+      max-width: 350px;
+      margin: 10px auto;
+      padding: 10px 20px;
+      border-radius: 8px;
+    }
+  
+  .description {
+      font-family: 'Lato', sans-serif;
+      font-size: 1.25rem;
+      font-weight: normal;
+      line-height: 1.6;
+      text-align: justify;
+  }
+  
+  label {
+      font-family: 'Cinzel', serif;
+      display: block;
+      margin-top: 20px;
+      margin-bottom: 8px;
+    }
+    
+  
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea,
+  select {
+    background: rgba(255,255,255,0.1);
+    border: solid 1px #333;
+    border-radius: 3px;
+    font-size: 1.25rem;
+    height: auto;
+    margin: 0;
+    padding: 15px;
+    width: 100%;
+    background-color: #e8eeef;
+    color: #8a97a0;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 1.25em;
+  }
+  
+  button {
+      color: #797e83;
+      font-size: 1.425em;
+      font-family: 'Cinzel', serif;
+      font-weight: normal;
+      text-decoration: none;
+      text-align: center;
+      font-style: normal;
+      width: 100%;
+      padding: 19px 39px 18px 39px;
+      border: solid 1px #333;
+      border-radius: 3px;
+      border-width: 1px 1px 3px;
+      box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+      margin-bottom: 10px;
+    }
+  
+    button:hover {
+      color: #2E2E30;
+      border-bottom: 3px solid #F79E2A;
+    }
+    
+    #nameRequest,
+    #emailRequest {
+      color: #FCFCFC;
+      font-size: 1rem;
+      font-family: 'Lato', sans-serif;
+      font-weight: normal;
+      text-align: center;
+      font-style: normal;
+      width: 100%;
+      padding: 9px 20px 8px 20px;
+      border: solid 1px #333;
+      background-color: firebrick; 
+      border-radius: 3px;
+      border-width: 1px 1px 3px;
+      box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+      margin-bottom: 10px;
+    }
+  
+    #confirmation {
+      color: #797e83;
+      font-size: 1.425em;
+      font-family: 'Lato', sans-serif;
+      font-weight: normal;
+      text-decoration: none;
+      text-align: center;
+      font-style: normal;
+      width: 100%;
+      padding: 19px 39px 18px 39px;
+      border: solid 1px #F79E2A;
+      border-radius: 3px;
+      border-width: 1px 1px 3px;
+      box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+      margin-bottom: 10px;
+    }
+  
+    
+    
+  /* --------------------------
+   Media Queries
+  --------------------------- */
+  @media(min-width: 48.0625em) {
+  
+    .contact-title {
+      text-align: center;
+    }
+  
+    #userName {
+      font-size: 1.25rem;
+    }
+  }
+  
+  @media (min-width: 67.5em) {
+  
+      form {
+        max-width: 500px;
+        margin: 0;
+      }
+      .contact-title {
+        text-align: left;
+      }
+    }

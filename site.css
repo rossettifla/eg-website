@@ -1,18 +1,12 @@
 
-/*html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
-* {-moz-box-sizing:border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
-*/
-@import url('https://fonts.googleapis.com');
-@import url('https://fonts.gstatic.com" crossorigin');
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300&display=swap');
-
 * {
     box-sizing: border-box;
 }
 html {
     height: 100%;
-    background-color: #bbbbbb;
     color: rgb(47, 67, 104);
+    background-color: #bbbbbb;
+    
 }
 body{
     font-family: 'Lato', sans-serif;
@@ -46,15 +40,16 @@ body{
 
 ul,
 li {
-  margin: 0;
-  padding: 0;
   list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  ;
 }
 
 .nav {
     margin-top: 6.5px;
     justify-content: flex-end;
-    margin-top: 0;
+    margin-top: 0px;
   }
 
   
@@ -66,10 +61,10 @@ li {
   .nav a {
     display: block;
     color: rgba(82, 47, 240, 0.849);
-    font-weight: bold;
-    text-align: center;
     padding: 6px;
     border-bottom: 1px solid #D4D3D9;
+    font-weight: bold;
+    text-align: center;
   }
   
   .nav a:hover {
@@ -96,9 +91,10 @@ body{
 main {
   flex-direction: row;
   max-width: 1200px;
+  width: 100%;
   margin: auto;
   margin-top: 16px;
-  width: 100%;
+  
 }
 
 .img-responsive{
@@ -112,20 +108,18 @@ main {
 .container,
 .wrap{
   margin-left: -10px;
-   display: flex;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: nowrap;
   align-items: center;
 }
-    .nav {
-        margin-top: 10px;
-        flex-direction: row;
-        justify-content:center;
-      }
-      .nav a {
-        border-bottom-color: transparent;
-      }
+.nav {
+  flex-direction: row;
+  margin-top: 10px;
+  justify-content:center;
+}
+
 .theband{
   margin-top: 50px;
 }
@@ -183,14 +177,12 @@ main {
     flex-wrap: nowrap;
     align-items: center;
   }
-      .nav {
-          margin-top: 10px;
-          flex-direction: row;
-          justify-content:center;
-        }
-        .nav a {
-          border-bottom-color: transparent;
-        }
+  .nav {
+    flex-direction: row;  
+    margin-top: 10px;
+    justify-content:center;
+  }
+        
   .theband{
     margin-top: 50px;
   }
@@ -212,5 +204,4 @@ main {
   display: flex;
   flex-direction:row;
   flex-wrap: nowrap;
-  align-items: center;
-}
+  align-items: center;}

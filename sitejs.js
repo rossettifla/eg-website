@@ -11,14 +11,12 @@ return false;
 
 } else { 
 console.log(document.getElementById('name').value);
-message.innerHTML = "";
+message.innerHTML = "Thank you for your message";
 return true;
 }
 
 
 };
     
-//Focus on the name field
-//Capture user name
-//Log user name to console
+
 

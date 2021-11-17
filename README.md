@@ -6,6 +6,6 @@ Contacts Page (Contact.html) - This page has a form for visitors to be able to c
 
 CSS Feature: I used flexbox to organize the content and layout when changing from smaller, medium, and large screens. 
 
-JavaScript Feature: The form has a feature that sends a message to the visitor in case they forgot to enter their name or email. The form also logs the user information into the console log. 
+JavaScript Feature: Javascript validates the name and the email of the visitor in the contact form. The validation also checks if the visitor the email in the correct format by checking if "@" and "." was included in the field Once the visitor submits the information correctly, the form sends a Thank you message to the visitor using their name. 
 
 Some other features: The menu changes direction according to the page size, for smaller pages the menu is vertical, for the medium and large screen the menu is horizontal. I adjusted the size and layout of the images according to the size of the screen. I linked the site with two external websites by clicking on the social media icon (music.html). I used google fonts. 

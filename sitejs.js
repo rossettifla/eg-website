@@ -1,22 +1,18 @@
 var myForm = document.forms.myForm;
 var message = document.getElementById("message");
 
-
-
-myForm.onsubmit = function() {
-
-if (myForm.name.value == "") {
-message.innerHTML = "Please enter a name";
+myForm.onsubmit = function(){
+    
+if (myForm.name.value == ""){
+message.innerHTML = "Please enter name";
 return false;
 
-} else { 
-console.log(document.getElementById('name').value);
-message.innerHTML = "Thank you for your message";
-return true;
+} else{ 
+if (myForm.email.value == "" || myForm.email.value.indexOf('@')== -1 || myForm.email.value.indexOf('.')==-1){
+message.innerHTML = "Please enter valid email";
+return false;
 }
 
-
-};
-    
-
-
+alert("Thank you "+myForm.name.value+" for your message");
+return true;
+}}
